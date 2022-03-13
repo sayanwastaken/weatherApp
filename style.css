@@ -1,0 +1,150 @@
+.container {
+    height: 620px;
+    width: 1220px;
+    display: grid;
+    grid-template-areas:
+      "s s s"
+      "w w m";
+    border-radius: 10px;
+
+    margin: 0 auto;
+    border: 5px solid black;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px,
+      rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+  iframe {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  #searchDiv {
+    grid-area: s;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+  }
+  #searchDiv > input {
+    width: 400px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    font-size: large;
+    font-weight: bold;
+  }
+  #searchDiv > input:hover {
+    border-bottom: 3px solid black;
+  }
+  #searchDiv > button:hover {
+    background-color: rgb(39, 39, 39);
+  }
+  #searchDiv > button {
+    width: 200px;
+    border: 0;
+    height: 80%;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  #mainW {
+    grid-area: w;
+    height: 560px;
+    width: 750px;
+    display: grid;
+    grid-template-areas:
+      "b"
+      "a";
+  }
+  #mapDiv {
+    grid-area: m;
+
+    height: 560px;
+    width: 450px;
+  }
+  #bigW {
+    grid-area: b;
+    width: 750px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: "e f";
+    background-image: url("");
+    background-repeat: no-repeat;
+    /* background-position-x:95%; */
+  }
+  #daysDiv {
+    grid-area: a;
+    width: 750px;
+    height: 160px;
+    display: flex;
+  }
+  #tempDiv {
+    grid-area: e;
+    width: 400px;
+    display: flex;
+  }
+  #day {
+    grid-area: f;
+    width: 350px;
+    height: 200px;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+  }
+  #day > h2 {
+    font-size: 50px;
+    margin: 0;
+  }
+  #day > h3 {
+    margin: 5px;
+    margin-top: 50px;
+  }
+  #day > p:nth-child(1) {
+    margin-top: 50px;
+  }
+  #tempText {
+    width: 280px;
+    font-size: 80px;
+    text-shadow: 25px;
+    text-shadow: 3px 5px 2px #474747;
+  }
+  #tempText > h1 {
+    /* float: right; */
+    margin-top: 110px;
+    margin-left: 140px;
+  }
+  #circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(206, 205, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  #circle > div {
+    border: 10px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .smallW {
+    width: 90px;
+    height: 88%;
+    margin: 9px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .smallW > h1 {
+    margin-left: 20%;
+  }
+  .smallW:hover {
+    border: 2px solid black;
+    transform: scale(1.09);
+  }
